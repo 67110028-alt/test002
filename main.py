@@ -1,5 +1,11 @@
-import myfunc
-a=5
-b=15
-result =myfunc.add(a,b)
-print(f"ผลลัพธ์={result}")
+from myfunc import add
+
+def main():
+    try:
+        a=float(intput("a="))
+        b=float(intput("b="))
+    result =add(a,b)
+    print(f"ผลลัพธ์={result}")
+    except ValueError:
+if __name__=="__main__":
+    main()
